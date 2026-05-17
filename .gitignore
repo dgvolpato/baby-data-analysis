@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Data and generated output
+data/
+output/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
