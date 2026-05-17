@@ -59,7 +59,7 @@ fig, ax1 = plt.subplots(figsize=(12, 5))
 ax2 = ax1.twinx()
 
 ax1.bar(merged.index, merged["Total"], color="steelblue", alpha=0.5, label="Total feeding (oz)")
-ax2.plot(merged.index, merged["Weight (lbs)"], color="darkorange", linewidth=2, label="Weight (lbs)")
+ax2.plot(weight_daily.index, weight_daily.values, color="darkorange", linewidth=2, label="Weight (lbs)")
 
 ax1.xaxis.set_major_locator(mdates.WeekdayLocator(byweekday=mdates.MO))
 ax1.xaxis.set_minor_locator(mdates.DayLocator())
